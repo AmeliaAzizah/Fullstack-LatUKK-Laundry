@@ -15,6 +15,9 @@ app.use("/laundry/api/member", member)
 app.use("/laundry/api/transaksi", transaksi)
 app.use("/laundry/api/auth", login)
 
+// untuk membaca folder image
+app.use(express.static(__dirname))
+
 app.listen(8000, () => {
     console.log(`Server run on port 8000`);
 })
